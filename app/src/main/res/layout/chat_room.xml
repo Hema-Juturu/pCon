@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools">
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Listen"
+             android:backgroundTint="#D561B5F8"
+            android:id="@+id/listen"
+            android:layout_marginRight="20px"
+    />
+    <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="connect"
+            android:backgroundTint="#D561B5F8"
+            android:id="@+id/connect"
+            android:layout_toRightOf="@+id/listen"
+            android:layout_marginRight="20px"
+    />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+       android:id="@+id/status" android:text="status"
+              android:backgroundTint="#D561B5F8"
+             android:layout_toRightOf="@id/connect"
+              android:layout_marginTop="20px"
+              android:textSize="70px"
+    />
+
+    <ListView android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:id="@+id/message"
+              android:layout_marginBottom="150px"
+              android:layout_marginLeft="40px"
+              android:layout_marginRight="40px"
+              android:padding="20px"
+              android:divider="@color/white"
+              android:layout_below="@+id/listen"
+              android:transcriptMode="alwaysScroll"
+
+    />
+    <EditText android:id="@+id/entermsg"
+              android:layout_width="match_parent" android:layout_height="150px"
+              android:layout_alignParentBottom="true"
+              android:textSize="40px"
+              android:hint="Enter message"
+                android:layout_marginRight="10px"
+    />
+
+    <ImageButton
+            android:layout_height="150px" android:layout_width="150px"
+            android:id="@+id/send"
+            android:background="@color/white"
+            android:src="@drawable/baseline_send_24"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/entermsg"
+           />
+</RelativeLayout>
